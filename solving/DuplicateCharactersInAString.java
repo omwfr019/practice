@@ -1,6 +1,7 @@
 package solving;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 // 문자열에서 중복 문자 찾기
@@ -35,3 +36,4 @@ public class DuplicateCharactersInAString {
 	}
 
 }
+// 출처 : https://javaconceptoftheday.com/duplicate-characters-in-a-string-in-java/
