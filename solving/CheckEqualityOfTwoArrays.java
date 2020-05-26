@@ -65,7 +65,7 @@ public class CheckEqualityOfTwoArrays {
 	
 	// 다차원 배열 검사
 	static void checkEquals4 (String[][] sss1, String[][] sss2) {
-		System.out.println(Arrays.deepEquals(sss1, sss2)); //true
+		System.out.println(Arrays.equals(sss1, sss2)); //true
 		System.out.println(Arrays.equals(sss1, sss2)); //false
 	}
 	
