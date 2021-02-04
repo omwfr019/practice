@@ -33,9 +33,9 @@ public class Solution {
         int result = 0;
         int cntSaveCloud = 0;
 
-        for(int i=0; i<c.length; i++){
+        for(int i = 0; i < c.length; i++){
 
-            if (c[i]==1) {
+            if (c[i] == 1) {
                 
                 if (cntSaveCloud == 1) {
                     result += jumpAvoidCloud;
