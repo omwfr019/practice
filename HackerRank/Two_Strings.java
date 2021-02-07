@@ -5,6 +5,8 @@ A substring may be as small as one character.
 
 (https://www.hackerrank.com/challenges/two-strings/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps)
 
+2021-02-07
+
 */
 
 
