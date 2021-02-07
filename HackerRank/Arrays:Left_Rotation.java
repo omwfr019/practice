@@ -10,6 +10,8 @@ Return the updated array to be printed as a single line of space-separated integ
 
 (https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays)
 
+2021-02-05
+
 */
 
 
