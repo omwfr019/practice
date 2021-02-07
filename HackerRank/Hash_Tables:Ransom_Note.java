@@ -8,7 +8,7 @@ He cannot use substrings or concatenation to create the words he needs.
 Given the words in the magazine and the words in the ransom note, print Yes if he can replicate his ransom note exactly using whole words from the magazine; otherwise, print No.
 
 For example, the note is "Attack at dawn". The magazine contains only "attack at dawn". 
-The magazine has all the right words, but there's a case mismatch. The answer is .
+The magazine has all the right words, but there's a case mismatch. The answer is No.
 
 (https://www.hackerrank.com/challenges/ctci-ransom-note/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps)
 
