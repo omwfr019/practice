@@ -25,7 +25,7 @@ import java.util.regex.*;
 public class Solution {
 
     // Complete the alternatingCharacters function below.
-    static int alternatingCharacters(String s) {
+    static int alternatingCharacters(String s) {    // Method 1
         int result = 0;
         
         for(int i=1; i<s.length(); i++){
@@ -33,6 +33,18 @@ public class Solution {
                 continue;
             }
             result++;
+        }
+        
+        return result;
+    }
+    
+    static int alternatingCharacters(String s) {    // Method 2
+        int result = 0;
+        
+        for(int i=1; i<s.length(); i++){
+            if(s.charAt(i) == s.charAt(i-1)){
+                result++;
+            }
         }
         
         return result;
