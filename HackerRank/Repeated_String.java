@@ -22,7 +22,7 @@ import java.util.regex.*;
 public class Solution {
 
     // Complete the repeatedString function below.
-    static long repeatedString(String s, long n) {
+    static long repeatedString_1(String s, long n) {    // Method 1 (v1)
         long result = 0;
         int cntAinS = 0;
         String remChar = s.substring(0, (int)(n%s.length()));
@@ -36,6 +36,29 @@ public class Solution {
             }
         }
         result += cntAinS * (n/s.length());
+        
+        return result;
+    }
+    
+    static long repeatedString(String s, long n) {  // Method 1 (v2) - v1의 가독성 개선
+        long result = 0;
+        int cntAInS = 0;
+        long cntRepeatS = n / s.length();
+        long remRepeatS = n % s.length();
+        String remainderS = s.substring(0, (int)remRepeatS);
+
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i) == 'a'){
+                cntAInS++;
+            }
+        }
+        result += cntAInS * cntRepeatS;
+        
+        for(int i=0; i<remainderS.length(); i++){
+            if(remainderS.charAt(i) == 'a'){
+                result++;
+            }
+        }
         
         return result;
     }
