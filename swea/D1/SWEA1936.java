@@ -26,7 +26,7 @@ public class SWEA1936 {
 		System.out.println(result);
 	}
 	
-	static void getRPSWinner_2(int a, int b) {	// approach 1
+	static void getRPSWinner_2(int a, int b) {	// approach 2.0
 		char result = 'A';
 		
         	if (a-b == -1 || a-b == 2) {
@@ -34,5 +34,13 @@ public class SWEA1936 {
         	}
         	
         	System.out.println(result);
+	}
+	
+	static void getRPSWinner_2(int a, int b) {	// approach 2.1
+        	if (a-b == -1 || a-b == 2) {
+        	    System.out.println("B");
+        	} else {
+		    System.out.println("A");
+		}
 	}
 }
