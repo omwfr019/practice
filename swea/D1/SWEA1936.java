@@ -9,6 +9,11 @@ public class SWEA1936 {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
+		getRPSWinner_1(a, b);
+		getRPSWinner_2(a, b);
+	}
+	
+	static void getRPSWinner_1(int a, int b) {	// approach 1
 		char result = 'A';
 		switch(a) {
 			case 1:
@@ -20,5 +25,14 @@ public class SWEA1936 {
 		}
 		System.out.println(result);
 	}
-
+	
+	static void getRPSWinner_2(int a, int b) {	// approach 1
+		char result = 'A';
+		
+        	if (a-b == -1 || a-b == 2) {
+        	    result = 'B';
+        	}
+        	
+        	System.out.println(result);
+	}
 }
