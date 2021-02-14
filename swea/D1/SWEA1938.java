@@ -6,12 +6,13 @@ import java.util.Scanner;
 public class SWEA1938 {
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
 
-		if((1<=a&&a<=9) && (1<=b&&b<=9)) {
-			System.out.println((a+b) +"\n"+ (a-b) +"\n"+ (a*b) +"\n"+ (a/b));
-		}
+		System.out.println(num1 + num2);
+		System.out.println(num1 - num2);
+		System.out.println(num1 * num2);
+		System.out.println(num1 / num2);
 	}
 
 }
