@@ -9,12 +9,12 @@ public class SWEA2043 {
 
 		int P = sc.nextInt();
 		int K = sc.nextInt();
-		int cnt = 0;
 		
-		if(P<=999) {
-			for(int i=K; i<=P; i++) cnt++;
-			System.out.println(cnt);
-		}
+		//int cnt = 0;
+		//for(int i=K; i<=P; i++) { cnt++; }
+		//System.out.println(cnt);
+		
+		System.out.println(P-K+1);
 	}
 
 }
