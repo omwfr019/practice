@@ -19,7 +19,7 @@ Out Format
 
 Link : https://www.hackerrank.com/challenges/plus-minus/problem
 
-<br/><br/><br/>
+<br/><br/>
 
 ## 설계
 1. 양수, 0, 음수의 개수를 저장할 변수 선언(int) & 양수, 0, 음수의 비율을 저장할 변수 선언(double)
@@ -56,12 +56,28 @@ Link : https://www.hackerrank.com/challenges/plus-minus/problem
 
 <br/><br/>
 
-문제를 풀 때 주의하여 풀었던 점은 다음과 같다.
-1. List에서 값을 가져오는 방법
+문제를 풀 때 주의한 점은 다음과 같다.
 
-3. 형변환
+#### List에서 값을 가져오는 방법
+List를 인자로 받았으므로 ArrayList, LinkedList가 특정되지 않음 ~> LinkedList에서 get()의 시간복잡도는 O(n). <br/>
+이때 <b>for문</b>을 사용하면 for가 중첩되어 시간복잡도가 O(n^2)이 됨. <br/>
+
+<b>forEach()</b>는 성능과 가독성에서 굳이 사용하지 않아도 된다고 판단.
+
+<br/>
+
+#### 형변환
+비율을 구하기 위해 '개수/배열크기' 연산 시 'int/int' 타입으로 계산되므로 double로 형변환 필요
+
+<br/>
   
-3. 소수점 아래 6자리 출력
+#### 소수점 아래 6자리 출력
+<b>Math.round()</b> => 소수점 아래 0을 출력하지 않아 자리수가 정해진 본 문제에선 적합하지 않다고 판단. <br/>
+ex) System.out.println((double)Math.round(ratioPos*1000000)/1000000); => 0.5 출력 <br/>
+
+<b>NumberFormat</b> : 다른 두 방법보다 번거로움. 장기적으로 유지보수 필요한 코드가 아니기 때문에 본 문제에선 사용하지 않음. <br/>
+
+<b>개선점)</b> 문제를 풀 때 6자리를 "%.6f"로 표현했는데, 자리수를 변경해야 하는 경우가 나타난다면? 포멧을 일일이 변경해야 함.
 
 
 <br/><br/>
